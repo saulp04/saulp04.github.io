@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+#menu li > a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+#menu form > button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.carousel-inner {
+    max-height: 39rem;
+}
+
+
+#separator-ribbon{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+
+}
+
+#separator-ribbon .content{
+    width:350%;
+    height: 150px;
+    margin-left: -25%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+
+}
+
+/* PANTALLAS PEQUEÑAS */
+@media (max-width:768px){
+    #intro, #about, #redes, #info, #experiencia,
+    #conocimientos{
+        width:90% !important;
+    }
+    
+    .servicio-fila {
+        width: 100% !important; 
+        text-align: center;
+    }
+}
+
+/* PANTALLAS MUY PEQUEÑAS */
+@media (max-width:576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
